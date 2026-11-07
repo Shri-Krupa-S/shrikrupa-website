@@ -13,7 +13,14 @@ function Experience() {
           <article className="experience-card scroll-reveal" key={`${role.company}-${role.role}`}>
             <p className="experience-card__period">{role.period}</p>
             <div className="experience-card__content">
-              <h3>{role.role}</h3>
+              <div className="experience-card__heading">
+                <h3>{role.role}</h3>
+                <img
+                  className="experience-card__logo"
+                  src={role.logo}
+                  alt={`${role.company} logo`}
+                />
+              </div>
               <p className="experience-card__company">{role.company} <span>·</span> {role.location}</p>
               <p className="experience-card__product">{role.product}</p>
               <div className="experience-card__achievements">

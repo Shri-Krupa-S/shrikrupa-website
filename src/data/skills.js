@@ -5,15 +5,15 @@ const skillGroups = [
   },
   {
     category: 'BACKEND',
-    items: ['Node.js', 'Express.js', 'TypeORM', 'Go'],
+    items: ['Node.js', 'Express.js', 'TypeORM'],
   },
   {
-    category: 'DATA & CLOUD',
-    items: ['PostgreSQL', 'SQL', 'BigQuery', 'Google Cloud', 'Firebase'],
+    category: 'DATABASE & CLOUD',
+    items: ['PostgreSQL', 'SQL', 'Google Cloud', 'Firebase'],
   },
   {
     category: 'TESTING & DELIVERY',
-    items: ['Cypress', 'Jest', 'Sinon', 'Jenkins', 'Git'],
+    items: ['Cypress', 'Jenkins', 'Git'],
   },
 ]
 

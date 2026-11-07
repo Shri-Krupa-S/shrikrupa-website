@@ -223,9 +223,9 @@
 
 .expertise-group ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 6px 11px;
+  gap: 6px;
   margin: 11px 0 0;
   padding: 0;
   list-style: none;
@@ -302,11 +302,27 @@
   box-shadow: 0 5px 16px rgb(29 29 27 / 5%);
 }
 
+.experience-card__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .experience-card__content h3 {
   margin: 0;
   color: var(--ink);
   font-size: 20px;
   font-weight: 700;
+}
+
+.experience-card__logo {
+  width: auto;
+  max-width: 62px;
+  height: 40px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  object-position: right top;
 }
 
 .experience-card__company {
@@ -402,7 +418,15 @@
   border-radius: 50%;
   color: #075273;
   background: #d8f6fc;
-  font-size: 23px;
+}
+
+.education-card__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
 }
 
 .education-card h3 {
@@ -434,6 +458,11 @@
   font-weight: 700;
 }
 
+.education-card__highlight {
+  border-bottom: 2px solid var(--tech-gold);
+  color: #705000;
+}
+
 .awards-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -441,9 +470,19 @@
   margin-top: 24px;
 }
 
+.recognition-highlight {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
+  margin: 24px auto 0;
+  border: 1px solid #e1e6e9;
+  box-shadow: 0 6px 18px rgb(7 19 29 / 12%);
+  filter: brightness(1.08);
+}
+
 .award-card {
   position: relative;
-  min-height: 175px;
+  min-height: 0;
   overflow: hidden;
   padding: 19px 18px 17px;
   border: 1px solid #bcecf7;
@@ -483,6 +522,21 @@
 
 .award-card--3::after {
   border-color: rgb(22 120 255 / 35%);
+}
+
+.award-card:last-child {
+  grid-column: 2;
+  border-color: #f0d98c;
+  background: linear-gradient(145deg, #fff4cc, #fffdf5 78%);
+}
+
+.award-card:last-child::after {
+  border-color: rgb(255 201 40 / 50%);
+}
+
+.award-card:last-child .award-card__mark {
+  color: #705000;
+  background: #ffe9a3;
 }
 
 .award-card__mark {
@@ -531,6 +585,36 @@
   color: #585653;
   font-size: 13px;
   line-height: 1.4;
+}
+
+.award-card__certificate {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+  margin-top: 15px;
+  color: #3e4d63;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.award-card__certificate img {
+  width: 100%;
+  height: 128px;
+  border: 1px solid rgb(7 19 29 / 12%);
+  background: #fff;
+  object-fit: contain;
+  transition: transform 180ms ease;
+}
+
+.award-card__certificate:hover img,
+.award-card__certificate:focus-visible img {
+  transform: scale(1.02);
+}
+
+.award-card__certificate span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .notes-section {
@@ -735,17 +819,25 @@
 }
 
 .footer-inner {
-  width: min(940px, calc(100% - 64px));
-  margin-inline: auto;
-  text-align: center;
+  width: 100%;
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding-inline: clamp(20px, 4vw, 56px);
   color: #fff;
   font-size: 13px;
+}
+
+.footer-bottom > :nth-child(2) {
+  text-align: center;
+}
+
+.footer-bottom > :last-child {
+  justify-self: end;
 }
 
 .footer-brand,
@@ -755,15 +847,14 @@
 }
 
 .footer-brand {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .footer-brand span {
   padding-inline: 4px;
 }
 
-.back-to-top:hover,
-.footer-brand:hover {
+.back-to-top:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -772,6 +863,16 @@
   .page-shell,
   .footer-inner {
     width: calc(100% - 42px);
+  }
+
+  .footer-inner {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    padding-inline: 18px;
+    gap: 8px;
+    font-size: 12px;
   }
 
   .nav-shell {
@@ -942,6 +1043,10 @@
     grid-template-columns: 1fr;
   }
 
+  .award-card:last-child {
+    grid-column: auto;
+  }
+
   .award-card {
     min-height: 155px;
   }
@@ -966,8 +1071,9 @@
   }
 
   .footer-bottom {
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-inline: 14px;
+    gap: 5px;
+    font-size: 10px;
   }
 }
 

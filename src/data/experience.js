@@ -1,8 +1,22 @@
+import niqLogo from '../assets/niq-logo.png'
+import tcsLogo from '../assets/tcs-logo.png'
+import risingStarCertificate from '../assets/rising-star-certificate.png'
+import bestYoungTalentCertificate from '../assets/best-young-talent-certificate.png'
+import helpfulHagridCertificate from '../assets/helpful-hagrid-certificate.png'
+import innovistaCertificate from '../assets/tcs-innovista-certificate.png'
+import specialAchievementCertificate from '../assets/tcs-special-achievement-certificate.png'
+import specialInitiativeCertificate from '../assets/tcs-special-initiative-certificate.png'
+import applauseCertificate from '../assets/tcs-applause-certificate.png'
+import niqAwardPhoto from '../assets/niq-award-photo.jpg'
+
+export { niqAwardPhoto }
+
 const experience = [
   {
     period: 'JUN 2023 — PRESENT',
     role: 'Full Stack Developer',
     company: 'NielsenIQ',
+    logo: niqLogo,
     location: 'Chennai, India',
     product: 'Byzzer · Data on Demand',
     achievements: [
@@ -23,6 +37,7 @@ const experience = [
     period: 'JAN 2022 — MAY 2023',
     role: 'Technical Lead (Additional Role)',
     company: 'Tata Consultancy Services',
+    logo: tcsLogo,
     location: 'Chennai, India',
     product: 'NIQ Byzzer · Global delivery',
     achievements: [
@@ -40,6 +55,7 @@ const experience = [
     period: 'JAN 2021 — MAY 2023',
     role: 'Full Stack Developer',
     company: 'Tata Consultancy Services',
+    logo: tcsLogo,
     location: 'Chennai, India',
     product: 'Byzzer · Customer Service',
     achievements: [
@@ -59,22 +75,62 @@ export const education = {
   institution: 'College of Engineering, Guindy, Anna University',
   degree: 'B.E. in Computer Science and Engineering',
   result: 'CGPA 9.01',
-  distinction: 'Final-year project ranked among Anna University’s Top 5 in 2020.',
+  distinction: {
+    lead: 'Final-year project ranked among Anna University’s ',
+    highlight: 'Top 5 in 2020',
+    trailing: '.',
+  },
 }
 
 export const awards = [
   {
     name: 'Rising Star Award',
-    organization: 'NIQ Global Technology Awards',
     year: '2025',
+    company: 'NIQ',
+    organization: 'NIQ Global Technology Awards',
+    certificate: risingStarCertificate,
   },
   {
     name: 'Best Young Talent Award',
-    organization: 'TCS Global Town Hall',
+    year: '2022',
+    company: 'TCS',
+    organization: 'TCS Global Townhall',
+    certificate: bestYoungTalentCertificate,
   },
   {
     name: 'Helpful Hagrid Award',
-    organization: 'TCS NIQ Client Appreciation',
+    year: '2021',
+    company: 'TCS',
+    organization: 'TCS Client Appreciation',
+    certificate: helpfulHagridCertificate,
+  },
+  {
+    name: 'Innovista Top Seed',
+    year: '2022',
+    company: 'TCS',
+    organization: 'TCS Gems',
+    certificate: innovistaCertificate,
+  },
+  {
+    name: 'Special Achievement Award',
+    year: '2021',
+    company: 'TCS',
+    organization: 'TCS Gems',
+    certificate: specialAchievementCertificate,
+  },
+  {
+    name: 'Special Initiative Award',
+    year: '2023',
+    company: 'TCS',
+    organization: 'TCS',
+    certificate: specialInitiativeCertificate,
+  },
+  {
+    name: 'Applause Award',
+    year: '2022',
+    company: 'TCS',
+    organization: 'TCS Gems',
+    certificate: applauseCertificate,
   },
 ]
 
