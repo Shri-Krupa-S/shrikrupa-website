@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
 import './App.css'
 import Footer from './components/Footer.jsx'
+import FloatingToolbar from './components/FloatingToolbar.jsx'
 import Navbar from './components/Navbar.jsx'
 import Articles from './pages/Articles.jsx'
+import Article from './pages/Article.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 
@@ -52,6 +54,8 @@ function App() {
     page = <Projects />
   } else if (path === '/articles') {
     page = <Articles />
+  } else if (path.startsWith('/articles/')) {
+    page = <Article slug={path.slice('/articles/'.length)} />
   }
 
   return (
@@ -59,6 +63,7 @@ function App() {
       <Navbar />
       {page}
       <Footer />
+      <FloatingToolbar />
     </>
   )
 }

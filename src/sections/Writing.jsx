@@ -1,4 +1,6 @@
 import SectionHeading from '../components/SectionHeading.jsx'
+import ArticleCard from '../components/ArticleCard.jsx'
+import { articles } from '../data/articles.js'
 
 const readingTopics = [
   'Software architecture',
@@ -15,14 +17,32 @@ function Writing() {
           <div>
             <SectionHeading
               number="05"
-              label="WRITING"
+              label="MY WRITINGS"
             />
           </div>
           <div className="notes-copy">
-            <p>
-              Notes on software engineering, architecture, and lessons from
-              building production systems.
-            </p>
+            <p>Some things I learnt, some things I thought, and some things I couldn’t stop thinking about.</p>
+          </div>
+        </div>
+        <div className="page-shell">
+          <div className="article-carousel" aria-label="Featured articles">
+            {articles.map((article) => (
+              <ArticleCard
+                article={article}
+                key={article.slug}
+                polaroid
+              />
+            ))}
+          </div>
+          <div className="notes-copy">
+            <a
+              className="notes-copy__link"
+              href="/articles"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Browse all articles <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import { education } from '../data/experience.js'
+import collegeLogo from '../assets/anna-university-logo.png'
+import degreeCertificate from '../assets/shri-krupa-degree-certificate.pdf'
 
 function Education() {
   return (
@@ -12,18 +14,33 @@ function Education() {
             <path d="M6 11v5c3.3 2.7 8.7 2.7 12 0v-5M22 9v6" />
           </svg>
         </div>
-        <div>
+        <div className="education-card__content">
           <h3>{education.institution}</h3>
           <p>{education.degree}</p>
           <div className="education-card__details">
             <span>{education.result}</span>
+            <span>{education.classification}</span>
             <span>
               {education.distinction.lead}
               <strong className="education-card__highlight">{education.distinction.highlight}</strong>
               {education.distinction.trailing}
             </span>
           </div>
+          <a
+            className="education-card__certificate-link"
+            href={degreeCertificate}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Degree Certificate
+          </a>
         </div>
+        <img
+          className="education-card__logo"
+          src={collegeLogo}
+          alt="Anna University logo"
+          loading="lazy"
+        />
       </article>
     </section>
   )

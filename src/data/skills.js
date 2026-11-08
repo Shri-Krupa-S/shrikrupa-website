@@ -9,7 +9,7 @@ const skillGroups = [
   },
   {
     category: 'DATABASE & CLOUD',
-    items: ['PostgreSQL', 'SQL', 'Google Cloud', 'Firebase'],
+    items: ['PostgreSQL', 'SQL', 'Google Cloud Platform', 'Firebase'],
   },
   {
     category: 'TESTING & DELIVERY',

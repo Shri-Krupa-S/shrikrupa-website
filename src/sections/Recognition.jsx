@@ -31,6 +31,11 @@ function Recognition() {
           </article>
         ))}
       </div>
+      <p className="recognition-note">
+        Beyond these awards, I’ve also received thoughtful recognition from colleagues,
+        managers, product owners, architects, and the Head of Technology through messages,
+        emails, and conversations.
+      </p>
     </section>
   )
 }
