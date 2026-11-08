@@ -4,7 +4,7 @@ import { awards, niqAwardPhoto } from '../data/experience.js'
 function Recognition() {
   return (
     <section className="recognition-section page-shell" id="recognition">
-      <SectionHeading number="04" label="AWARDS & RECOGNITION" />
+      <SectionHeading number="05" label="AWARDS & RECOGNITION" />
       <img
         className="recognition-highlight"
         src={niqAwardPhoto}

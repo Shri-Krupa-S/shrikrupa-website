@@ -12,7 +12,8 @@ function Navbar() {
         <div className="nav-links">
           <a href="/#experience">Experience</a>
           <a href="/articles">Writing</a>
-          <a href="/#reading">Reading</a>
+          <a href="/reading">Reading</a>
+          <a href="/#learning">Learning</a>
           <a className="nav-resume" href="/Shri-Krupa-Resume-2026.pdf" download="Shri-Krupa-S-Resume.pdf">Resume ↓</a>
         </div>
       </nav>

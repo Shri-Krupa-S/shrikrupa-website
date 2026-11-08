@@ -1,13 +1,8 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import ArticleCard from '../components/ArticleCard.jsx'
 import { articles } from '../data/articles.js'
-
-const readingTopics = [
-  'Software architecture',
-  'Product engineering',
-  'Design systems',
-  'Distributed systems',
-]
+import BookShelf from '../components/BookShelf.jsx'
+import books from '../data/books.js'
 
 function Writing() {
   return (
@@ -16,7 +11,7 @@ function Writing() {
         <div className="page-shell notes-grid">
           <div>
             <SectionHeading
-              number="05"
+              number="06"
               label="MY WRITINGS"
             />
           </div>
@@ -48,14 +43,13 @@ function Writing() {
       </section>
 
       <section className="reading-section page-shell scroll-reveal" id="reading">
-        <SectionHeading number="06" label="READING LIST" />
+        <SectionHeading number="07" label="MY READING LIST" />
         <div className="reading-content">
-          <h2>Current topics</h2>
-          <ul className="reading-list">
-            {readingTopics.map((topic, index) => (
-              <li key={topic}><span>0{index + 1}</span>{topic}<span aria-hidden="true">↗</span></li>
-            ))}
-          </ul>
+          <p className="reading-content__intro">A collection of minds I’ve had the pleasure of meeting.</p>
+          <BookShelf books={books} compact />
+          <a className="reading-content__link" href="/reading" target="_blank" rel="noreferrer">
+            Explore my reading list <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </>
