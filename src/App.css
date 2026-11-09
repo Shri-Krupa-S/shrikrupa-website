@@ -1158,17 +1158,112 @@
   pointer-events: none;
 }
 
-.book-card__cover--habits {
-  color: #263b2d;
+.book-card__cover--image {
+  aspect-ratio: 2 / 3;
+  min-height: 0;
+  padding: 0;
+}
+
+.book-card__cover--image::after {
+  display: none;
+}
+
+.book-card__cover--image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-card__cover--indigo {
+  background: linear-gradient(145deg, #252b61, #7069a9);
+}
+
+.book-card__cover--forest {
+  background: linear-gradient(145deg, #173f38, #81a884);
+}
+
+.book-card__cover--blue {
+  background: linear-gradient(145deg, #123d63, #5ca9bc);
+}
+
+.book-card__cover--amber {
+  color: #342613;
+  background: linear-gradient(145deg, #efd18a, #bd762e);
+}
+
+.book-card__cover--sage {
+  color: #27392d;
   background: linear-gradient(145deg, #e8dfc7, #a9bd92);
 }
 
-.book-card__cover--money {
-  background: linear-gradient(145deg, #67503b, #b08048);
+.book-card__cover--rose {
+  background: linear-gradient(145deg, #713c54, #d49c9e);
 }
 
-.book-card__cover--code {
-  background: linear-gradient(145deg, #242c38, #4d6971);
+.book-card__cover--leaf {
+  color: #263b2d;
+  background: linear-gradient(145deg, #dfe9ba, #6fae83);
+}
+
+.book-card__cover--sky {
+  background: linear-gradient(145deg, #296387, #a7d4d7);
+}
+
+.book-card__cover--plum {
+  background: linear-gradient(145deg, #382d59, #a987aa);
+}
+
+.book-card__cover--clay {
+  background: linear-gradient(145deg, #914d3e, #d7a47e);
+}
+
+.book-card__cover--mountain {
+  background: linear-gradient(145deg, #384451, #9a8b7b);
+}
+
+.book-card__cover--midnight,
+.book-card__cover--navy {
+  background: linear-gradient(145deg, #101d33, #354f75);
+}
+
+.book-card__cover--teal {
+  background: linear-gradient(145deg, #144f58, #70aaa1);
+}
+
+.book-card__cover--gold {
+  color: #3a2a12;
+  background: linear-gradient(145deg, #f3d880, #b89238);
+}
+
+.book-card__cover--coral {
+  background: linear-gradient(145deg, #a75045, #efb986);
+}
+
+.book-card__cover--orange {
+  background: linear-gradient(145deg, #9a492c, #e69b45);
+}
+
+.book-card__cover--sunrise {
+  color: #372b3b;
+  background: linear-gradient(145deg, #f0ad70, #9b6c91 70%, #384d70);
+}
+
+.book-card__cover--violet {
+  background: linear-gradient(145deg, #473d80, #aa81a8);
+}
+
+.book-card__cover--slate {
+  background: linear-gradient(145deg, #34404a, #8b9b9f);
+}
+
+.book-card__cover--berry {
+  background: linear-gradient(145deg, #66354f, #bd7d91);
+}
+
+.book-card__cover--green {
+  color: #263b2d;
+  background: linear-gradient(145deg, #d6e5ad, #629d78);
 }
 
 .book-card__cover-title,
