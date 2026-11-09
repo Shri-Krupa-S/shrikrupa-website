@@ -12,7 +12,7 @@ function Hero() {
           <h1 id="hero-title">Shri Krupa S</h1>
           <p className="hero__headline">Full-Stack Engineer</p>
           <p className="hero__description">
-            Chennai, India · shri.sk.krupa@gmail.com
+            Chennai, India
           </p>
         </div>
       </div>

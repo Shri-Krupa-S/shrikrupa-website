@@ -1,4 +1,5 @@
 import atomicHabitsCover from '../assets/books/atomic-habits.png'
+import awakeningInWombCover from '../assets/books/awakening-in-womb.jpg'
 import eightRulesOfLoveCover from '../assets/books/8-rules-of-love.png'
 import sevenHabitsCover from '../assets/books/7-habits.png'
 import artOfBeingAloneCover from '../assets/books/the-art-of-being-alone.jpg'
@@ -11,6 +12,7 @@ import jonathanLivingstonSeagullCover from '../assets/books/jonathan-livingston-
 import learnedOptimismCover from '../assets/books/learned-optimism.jpg'
 import magicOfThinkingBigCover from '../assets/books/magic-of-thinking-big.jpg'
 import makeEpicMoneyCover from '../assets/books/make-epic-money.png'
+import menAreFromMarsCover from '../assets/books/men-are-from-mars-women-are-from-venus.jpg'
 import miracleMorningCover from '../assets/books/miracle-morning.webp'
 import mountainIsYouCover from '../assets/books/the-mountain-is-you.jpg'
 import readPeopleLikeABookCover from '../assets/books/read-people-like-a-book.jpeg'
@@ -229,6 +231,24 @@ const books = [
     takeaway: 'Break complex design problems into requirements, trade-offs, and clear system components.',
     cover: 'navy',
     coverImage: systemDesignInterviewCover,
+  },
+  {
+    id: 'men-are-from-mars-women-are-from-venus',
+    title: 'Men Are from Mars, Women Are from Venus',
+    author: 'John Gray',
+    status: 'Finished',
+    takeaway: 'Clear communication starts with curiosity about how each person experiences and expresses their needs.',
+    cover: 'green',
+    coverImage: menAreFromMarsCover,
+  },
+  {
+    id: 'awakening-in-womb',
+    title: 'Awakening in Womb',
+    author: 'Dr. Monika Singh',
+    status: 'Finished',
+    takeaway: 'A reflective guide to conscious conception, pregnancy, birth, and parenting.',
+    cover: 'rose',
+    coverImage: awakeningInWombCover,
   },
 ]
 

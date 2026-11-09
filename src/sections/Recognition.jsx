@@ -34,7 +34,7 @@ function Recognition() {
       <p className="recognition-note">
         Beyond these awards, I’ve also received thoughtful recognition from colleagues,
         managers, product owners, architects, and the Head of Technology through messages,
-        emails, and conversations.
+        emails, and conversations, for which am truly grateful.
       </p>
     </section>
   )
