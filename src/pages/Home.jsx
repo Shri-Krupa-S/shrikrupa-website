@@ -5,6 +5,7 @@ import Education from '../sections/Education.jsx'
 import Learning from '../sections/Learning.jsx'
 import Recognition from '../sections/Recognition.jsx'
 import Writing from '../sections/Writing.jsx'
+import OtherInterests from '../sections/OtherInterests.jsx'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Learning />
       <Recognition />
       <Writing />
+      <OtherInterests />
     </main>
   )
 }
