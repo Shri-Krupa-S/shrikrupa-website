@@ -244,6 +244,48 @@
   text-underline-offset: 4px;
 }
 
+.other-interests__link {
+  display: block;
+  width: fit-content;
+  margin: 14px auto 0;
+  color: #075273;
+  font-size: 14px;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.interests-page {
+  padding-block: 36px 64px;
+}
+
+.interests-page__intro {
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.interests-page__intro h1 {
+  margin: 8px 0;
+  color: var(--ink);
+  font-size: clamp(29px, 4vw, 38px);
+}
+
+.interests-page__intro p {
+  margin: 0;
+  color: #454650;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.interests-page .other-interests__list {
+  margin-top: 0;
+}
+
+.interests-page .other-interests__copy h2 {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-size: 17px;
+}
+
 .section-label {
   display: flex;
   align-items: center;

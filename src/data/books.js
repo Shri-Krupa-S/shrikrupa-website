@@ -15,6 +15,7 @@ import makeEpicMoneyCover from '../assets/books/make-epic-money.png'
 import menAreFromMarsCover from '../assets/books/men-are-from-mars-women-are-from-venus.jpg'
 import miracleMorningCover from '../assets/books/miracle-morning.webp'
 import mountainIsYouCover from '../assets/books/the-mountain-is-you.jpg'
+import overcomingFearCover from '../assets/books/overcoming-fear.jpg'
 import readPeopleLikeABookCover from '../assets/books/read-people-like-a-book.jpeg'
 import satvicRevolutionCover from '../assets/books/satvic-revolution.png'
 import setBoundariesFindPeaceCover from '../assets/books/set-boundaries-find-peace.png'
@@ -33,6 +34,15 @@ const books = [
     takeaway: 'A calmer mind comes from practicing focus, compassion, and purpose every day.',
     cover: 'indigo',
     coverImage: thinkLikeAMonkCover,
+  },
+  {
+    id: 'the-art-of-overcoming-fear',
+    title: 'The Art of Overcoming Fear',
+    author: 'Pradip Das',
+    status: 'Finished',
+    takeaway: 'A guide to handling fear, building self-management skills, and facing challenges.',
+    cover: 'sky',
+    coverImage: overcomingFearCover,
   },
   {
     id: '7-habits',

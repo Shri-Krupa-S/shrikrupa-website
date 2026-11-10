@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.jsx'
 import Articles from './pages/Articles.jsx'
 import Article from './pages/Article.jsx'
 import Home from './pages/Home.jsx'
+import Interests from './pages/Interests.jsx'
 import Projects from './pages/Projects.jsx'
 import Reading from './pages/Reading.jsx'
 
@@ -108,6 +109,8 @@ function App() {
     page = <Article slug={path.slice('/articles/'.length)} />
   } else if (path === '/reading') {
     page = <Reading />
+  } else if (path === '/interests') {
+    page = <Interests />
   }
 
   return (
